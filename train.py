@@ -11,7 +11,6 @@ from keras.layers import CuDNNLSTM as LSTM
 from keras.models import Model, load_model
 from keras.metrics import categorical_accuracy
 from keras.utils import to_categorical, plot_model
-from livelossplot import PlotLosses
 import numpy as np
 
 def DataGenerator(x_data, y_data, batch_size, lookback_length):
@@ -158,7 +157,6 @@ except FileNotFoundError:
     plot_model(model, "model.png", show_shapes=True, expand_nested=True)
 
 batch_size = 256
-lossplot = PlotLosses(skip_first=batch_size)
 epoch = 0
 num_samples = len(X)
 DataGen = DataGenerator(X, Y, batch_size, 20)
@@ -167,12 +165,11 @@ target_epoch = 0
 while target_epoch < 250:
     x, y = next(DataGen)
     loss, acc = model.train_on_batch(x, y)
-    lossplot.update({"loss": loss, "acc":acc})
     #if we have gone past the epoch which we are lookign for
     if (epoch*batch_size)//num_samples > target_epoch:
-        lossplot.draw()
         #gives a rough esitmate of the number of passes over the dataset
-        print((epoch*batch_size)//num_samples)
+        print("Epoch", (epoch*batch_size)//num_samples)
+        print(f"Accuracy: {acc} Loss: {loss}")
         model.save("model.h5")
-        target_epoch += 1
+        target_epoch += 10
     epoch += 1
