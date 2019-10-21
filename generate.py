@@ -43,7 +43,7 @@ token_to_word = load(open("token_to_word.json", 'r'))
 target_length = model.layers[0].output_shape[-1]
 
 while True:
-    phrase = input("    ")
+    phrase = input("Enter a prompt:    ")
     input_phrase = phrase
     #removes punctuation from the copy of the inputted phrase that will be inputted to the model
     for punc in punctuation:
