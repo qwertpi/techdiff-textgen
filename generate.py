@@ -1,13 +1,9 @@
 from json import load
-from re import sub
 from string import punctuation
 
 from logzero import logger
-from keract import get_activations
-from keras.models import load_model, Model
-from keras.layers import Lambda
+from keras.models import load_model
 import numpy as np
-from numpy.random import multinomial
 
 model = load_model("model.h5")
 
