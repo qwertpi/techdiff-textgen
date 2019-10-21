@@ -2,6 +2,7 @@ echo 'Updating your packages'
 sudo apt-get update && sudo apt-get upgrade -y
 echo 'Installing Python, the Python Package Installer and software to download code from GitHub'
 sudo apt-get install python3 python3-pip git -y
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 echo 'Downloading code from Github'
 git clone https://github.com/qwertpi/techdiff-textgen.git
 cd techdiff-textgen

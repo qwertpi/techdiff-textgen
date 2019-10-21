@@ -31,8 +31,9 @@ You must:
 * libhdf5 (only needed on some systems) `sudo apt-get install libhdf5-serial-dev`
 * dos2unix (data download only) `sudo apt-get install dos2unix`
 * ffmpeg (data download only) `sudo apt-get install ffmpeg`
+* git-lfs
 ## One-liner install
-`curl https://raw.githubusercontent.com/qwertpi/tech-diff-textgen/master/install.bash | bash`
+`curl https://raw.githubusercontent.com/qwertpi/techdiff-textgen/master/install.bash | bash`
 ## Usage
 0\. Download this repo  
 ### Training (Optional)
