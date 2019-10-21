@@ -1,4 +1,4 @@
-livelossplot
-keract
-keras
-logzero
+keras>=2.2.5
+h5py>=2.8.0
+numpy>=1.16.5
+logzero>=1.5.0
