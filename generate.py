@@ -55,7 +55,6 @@ while True:
     padded_input_phrase = tokenized_input_phrase
     while len(padded_input_phrase) < target_length:
         padded_input_phrase.append(0)
-    print(padded_input_phrase)
     predictions = model.predict(np.array([padded_input_phrase]))[0].astype("float64")
     #argsort gives the index of every value in acending order of the values
     #[::-1] reverses the array to give decending order
