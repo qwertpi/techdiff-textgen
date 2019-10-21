@@ -27,8 +27,10 @@ You must:
 * Numpy `pip3 install numpy`
 * h5py `pip3 install h5py`
 * logzero `pip3 install logzero`
+* youtube-dl (data download only) `pip3 install youtube-dl`
 * libhdf5 (only needed on some systems) `sudo apt-get install libhdf5-serial-dev`
-
+* dos2unix (data download only) `sudo apt-get install dos2unix`
+* ffmpeg (data download only) `sudo apt-get install ffmpeg`
 ## One-liner install
 `curl https://raw.githubusercontent.com/qwertpi/tech-diff-textgen/master/install.bash | bash`
 ## Usage

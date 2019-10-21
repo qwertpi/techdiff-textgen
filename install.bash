@@ -8,6 +8,8 @@ cd techdiff-textgen
 echo 'Installing the requried python libaries'
 pip3 install --user -U -r requirements.txt
 sudo apt-get install libhdf5-serial-dev
+echo 'Installing tools required for data download'
+sudo apt-get install dos2unix ffmpeg`
 echo 'Downloading training data'
 bash data_download.bash
 echo 'Done!'
