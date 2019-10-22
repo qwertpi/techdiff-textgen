@@ -5,6 +5,7 @@ cd transcript-download
 youtube-dl -4 -i --write-sub --skip-download --sub-format vtt --sub-lang en https://www.youtube.com/playlist?list=PLiVN676w5O6U6ZSzsGE75anyr86_U_b1C
 youtube-dl -4 -i --write-sub --skip-download --sub-format vtt --sub-lang en https://www.youtube.com/playlist?list=PL96C35uN7xGI9HGKHsArwxiOejecVyNem
 youtube-dl -4 -i --write-sub --skip-download --sub-format vtt --sub-lang en https://www.youtube.com/playlist?list=PL96C35uN7xGK_y459BdHCtGeftqs5_nff
+youtube-dl -4 -i --write-sub --skip-download --sub-format vtt --sub-lang en https://www.youtube.com/playlist?list=PLfx61sxf1Yz0ch57oygmnSeqGbjb9EeLi
 for i in *.vtt; do ffmpeg -hide_banner -v 16 -i "$i" "$i.srt" ; done
 for i in *.srt; do sed -r '/^[0-9]+$/{N;d}' "$i" > "$i.txt"; done
 for i in *.txt; do dos2unix -q "$i"; done
