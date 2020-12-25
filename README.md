@@ -2,8 +2,7 @@
 An LSTM trained on all tech diff vidoes alongside all of Tom Scott's Amazing Places and Things you might not Know  
 [Generation Demo](https://colab.research.google.com/drive/1opVwFa0oz7aWEe6iCSLUsL4mPiSUDeT9#forceEdit=true&sandboxMode=true)  
 This is a fan project and is in no way affiliated or endorsed by Tom or any of Tech Diff but I will be making him aware of this repo in case he wishes for it to be taken down. Update: He says it can stay up  
-
-Feedback and pull requests are very welcome  
+ 
 Copyright © 2019  Rory Sharp All rights reserved.  
 ## Non legaly binding licence summary
 You may:
